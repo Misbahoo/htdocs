@@ -1,0 +1,239 @@
+/*General styles across all screen sizes*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_header {
+    background: yellow;
+}
+
+/*mobile screen sizes styles*/
+@media screen and (max-width: 480px){
+
+    .nav_header li{
+        list-style-type: none;
+        text-align: center;
+    }
+    .nav_header a{
+    text-decoration: none;
+    margin: 0;
+    padding: 5px;
+    color: gray;
+}.nav_header a:hover{
+    color: black;
+}
+
+#bannerDiv img{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+#bannerDiv p{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 3px 0 5px gray;
+}
+
+.main_flex_one{
+    display: flex;
+    flex-direction: column;
+}
+.imageDiv{
+    margin-top: 5px;
+}.imageDiv img{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px black;
+}.imageDiv p{
+    text-align: center;
+    padding: 5px;
+    color: grey;
+}
+
+#bottomBkgPic{
+    background-image: url(../images/willow.jpg);
+    height: 200px;
+    background-position: -50px 0;
+}
+#bottomBkgPic h2{
+    color: rgb(220,220,220);
+    text-align: center;
+    padding: 5px;
+}#bottomBkgPic p{
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+#dropJSON img{
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+}
+
+#dropJSON p{
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 0 3px gray;
+}
+
+/*footer Section*/
+.footerFlex{
+    display: flex;
+    flex-direction: column;
+    background: rgb(70,70,70);
+    }
+.footerSec ul{
+    list-style-type: none;
+    text-align: center;
+}
+.footerSec a{
+    text-decoration: none;
+    color: white;
+}
+
+.veryFooter{
+    background: rgb(25,25,25);
+    color: white;
+    text-align: center;
+}
+
+.veryFooter p{
+    padding: 15px;
+}
+}
+
+/*Tablets screen sizes styles*/
+@media screen and (min-width: 481px) {
+
+    /*navigation section*/
+
+    .nav_header{
+        display: flex;
+    }
+    .nav_header ul{
+        flex-basis: 79%;
+    }
+    .logoDiv{
+        flex-basis: 19%;
+    }
+
+    .logoDiv img{
+        width: 90%;
+    }
+    .nav_header li{
+        display: inline-block;
+    }
+    .nav_header a{
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        color: gray;
+    }
+    .nav_header a:hover{
+        color: rgb(20,20,20);
+        font-weight: bold;
+    }
+
+    /*banner section*/
+    #bannerDiv img{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /*mid seciton*/
+
+    .main_flex_one {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .imageDiv img{
+        width: 100%;
+    }
+    .imageDiv{
+        flex-basis: 30%;
+        margin: 5px;
+    }
+
+    #bottomBkgPic{
+        background-image: url(../images/willow.jpg);
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bottomBkgPic h2{
+        color: rgb(220,220,220);
+        text-align: center;
+        padding: 5px;
+    }#bottomBkgPic p{
+        color: gray;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: 0 0 10px rgb(0,0,0);
+    }
+
+    #dropJSON {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #dropJSON img{
+        display: block;
+        width: 90%;
+    }
+
+
+    .footerFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: rgb(70,70,70);
+    }
+    .footerSec{
+        flex-basis: 37%;
+    }
+    .footerSec ul{
+        margin: 10px;
+    }
+    .footerSec li{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .footerSec a{
+        text-decoration: none;
+        color: gray;
+        padding: 10px;
+    }
+    .footerSec a:hover{
+        color: white;
+    }
+
+    .veryFooter {
+        background: rgb(25,25,25);
+    }
+    .veryFooter p{
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+}

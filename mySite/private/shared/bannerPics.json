@@ -1,0 +1,22 @@
+{
+    "pic" : [ {
+        "image" : "../images/banner-1.jpg",
+        "descrip" : "Sunset in the downhill of some country somewhere in the world, it is beautiful"
+    },
+
+     {
+        "image" : "../images/banner-2.jpg",
+        "descrip" : "Another picture that I did not check to know what it is about but I will check it letter"
+    },
+
+    {
+        "image" : "../images/nature.jpg",
+        "descrip" : "The nature of the item is here already and no one can ever change it I guess"
+    },
+
+    {
+        "image" : "../images/willow.jpg",
+        "descrip" : "The willow image was the one I used at the buttom of the page and created box-shadow to make it look nicer"
+    }
+    ]
+}
