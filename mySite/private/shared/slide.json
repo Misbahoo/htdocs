@@ -1,16 +1,4 @@
 {
-    "slide1" : {
-        "images" : "../images/sunset.jpg",
-        "description" : "This is the description of this picutre and I have no idea what it was Okay?"
-    },
-    "slide2" : {
-        "images" : "../images/banner-1.jpg",
-        "description" : "Another description for the second picture in the list, fewwww. bull thing"
-    },
-    "slide3" : {
-        "images" : "../images/banner-2.jpg",
-        "description" : "Third description of these images in line either, no idea as always"
-    },
     "slide4" : {
         "images" : "../images/geeks.jpg",
         "description" : "I am actually tired of this trash writing that has no meaning what so ever so far"

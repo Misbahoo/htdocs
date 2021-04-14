@@ -10,6 +10,37 @@ body{
     padding: 0;
 }
 
+.fade{
+    animation: fade;
+    animation-duration: 1.5s;
+    -webkit-animation: fade;
+    -webkit-animation-duration: 1.5s;
+    -o-animation: fade;
+    -o-animation-duration: 1.5s;
+    -moz-animation: fade;
+    -moz-animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+
+@-moz-keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+
+@-o-keyframes fade{
+    from{opacity: 4;}
+    to{opacity: 1;}
+}
+
 .nav_header {
     background: yellow;
 }
