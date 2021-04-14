@@ -1,6 +1,7 @@
 let midPic = new XMLHttpRequest();
 
-let dropJSON = document.getElementById("dropJSON");
+
+let dropJSONdiv = document.querySelector(".dropJSON-Div");
 
 midPic.open("GET", "../private/shared/slide.json", true);
 
@@ -12,17 +13,23 @@ midPic.onreadystatechange = function() {
 //Loop through and display the contents of slide.json file
         for(x in myJSON){
 
+            dropJSON = document.createElement("div");
+            dropJSON.setAttribute('id', 'dropJSON');
             let images = myJSON[x].images;
             let desc = myJSON[x].description;
             txt.appendChild(document.createTextNode(desc));
             
             dropJSON.appendChild(document.createElement("IMG")).src=images;
             dropJSON.appendChild(document.createElement("P")).innerHTML = desc;
+
+            dropJSONdiv.appendChild(dropJSON);
         }
       }
 }
 midPic.send();
 
+
+//Loop through and display the contents of bannerPic.json
 let bannerPics = new XMLHttpRequest();
 let bannerDiv = document.querySelector("#bannerDiv");
 
@@ -39,7 +46,7 @@ bannerPics.onreadystatechange = function (){
         bannerDiv.appendChild(para).innerHTML = "The willow image was the one I used at the buttom of the page and created box-shadow to make it look nicer";
 
         let i = 0;
-        let pointInterval = setInterval(function (){
+        let clearInterval = setInterval(function (){
             if(i == lenOf) i = 0;
 
                 bannerDiv.appendChild(img).src=theBanners.pic[i].image;

@@ -30,7 +30,9 @@
 </div>
 
 <!-- picture from external json file -->
-<div id="dropJSON"></div>
+<div class="dropJSON-Div">
+
+</div>
 
 
 <?php include '../private/shared/footer.php' ?>
