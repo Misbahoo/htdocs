@@ -6,5 +6,9 @@
     "slide5" : {
         "images" : "../images/pencil.jpg",
         "description" : "This is just a pencil picture that I downloaded from the free website on the internet"
+    },
+    "slide6" : {
+        "images" : "../images/laptop.jpg",
+        "description" : "Another picture all in the name of practicing on how to use JSON on this machine"
     }
 }
